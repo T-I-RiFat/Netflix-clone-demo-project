@@ -130,10 +130,10 @@ body {
 }
 
 .input input[type="text"]:focus {
-        border-color: #4CAF50;
-        background-color: #eaffea;
-        box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
-    }
+    border-color: #4CAF50;
+    background-color: #eaffea;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
 
 .input input {
     width: 300px;
@@ -181,6 +181,7 @@ body {
 }
 
 .img1 {
+    font-weight: bold;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -251,7 +252,7 @@ body {
 }
 
 footer {
-    display: flex;
+    display: grid;
     width: 80vw;
     margin: 20px 10%;
     justify-content: space-between;
@@ -261,21 +262,21 @@ footer {
 }
 
 .footer {
-    display: flex;
+    display: grid;
     width: 80vw;
-    margin: 20px 10%;
-    justify-content: space-between;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80vw;
     flex-direction: row;
     align-items: center;
     color: white;
+    gap: 20px;
 }
 
 .footerlinks {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .footer-email {
@@ -288,4 +289,51 @@ footer {
     align-items: center;
     color: white;
     gap: 10px;
+}
+
+.footer-links a {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.726);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #e91e63;
+}
+
+.footer-links div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.footer-text {
+    font-size: 25px;
+    color: white;
+    margin: 50px 0 40px 0px;
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .nav img {
+        width: 130px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
