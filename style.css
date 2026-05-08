@@ -329,15 +329,14 @@ footer {
         line-height: 40px;
     }
 
-
+    .footer-links div{
+        height: 25px;
+    }
+    
 }
 
 @media screen and (max-width: 450px) {
     .footer {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-links div{
-        height: 25px;
     }
 }
