@@ -364,7 +364,7 @@ footer {
         font-style: normal;
         font-weight: bolder;
         font-size: 30px;
-        line-height: 70px;
+        line-height: 40px;
         text-align: center;
     }
 
@@ -393,6 +393,7 @@ footer {
 
     .hero> :nth-child(2) {
         font-size: 15px;
+        line-height: 10px;
     }
 
     .hero> :nth-child(2) {
