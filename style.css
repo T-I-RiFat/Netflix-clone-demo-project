@@ -336,4 +336,8 @@ footer {
     .footer {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer-links div{
+        height: 25px;
+    }
 }
